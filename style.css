@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #83a8df, #c3cfe2);
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.app-name {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.app-name::after {
+    content: "";
+    background: #667eea;
+    position: absolute;
+    bottom: -4px;
+    width: 46%;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.generate-btn {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.generate-btn:hover {
+    box-shadow: 0 6px 10px rgba(102, 126, 234, 0.5);
+}
+
+.generate-btn:active {
+    transform: scale(0.97);
+}
+
+.colors-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 30px;
+}
+
+.color-item {
+    position: relative;
+    width: 120px;
+    height: 130px;
+    background-color: black;
+    overflow: hidden;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.color-item:hover {
+    transform: translateY(-10px);
+}
+
+
+.color-item .color-item-info {
+    height: 28px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    font-size: 12px;
+}
+
+.copy-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.check-icon {
+    color: green;
+}
